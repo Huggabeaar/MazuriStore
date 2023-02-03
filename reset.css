@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[role = 'list'],
+ol[role = 'list'] {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+input, textarea {
+    border: none;
+    -webkit-appearance: none;
+}
+
+select {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+::placeholder {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
